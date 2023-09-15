@@ -34,6 +34,9 @@ var getName = function () {
 }
 // The code won't execute as the first line itself throws an TypeError.
 ```
+This happens because getName is a function expression. So, in the memory creation phase, JS treats it as a variable and initializes it as undefined. Same thing happens for arrow functions as well.
+![image](https://github.com/snigdhob/namaste-javascript-notes/assets/20543966/1f14ca48-add7-4151-965b-5491d8e8c246)
+
 
 <hr>
 
